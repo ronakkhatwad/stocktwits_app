@@ -8,4 +8,4 @@ This project is for Stocktwits Authentication Flow Implementation in Flutter.
 
 
 Screenshot
-![alt text](https://github.com/ronakkhatwad/stocktwits_app/blob/master/screenshot/Screenshot_1624950231.png)
+![alt text](https://github.com/ronakkhatwad/stocktwits_app/blob/master/screenshot/Screenshot_1624950231.png?raw=true 540x1110)
