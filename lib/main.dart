@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:stocktwits_app/authentication_page.dart';
+import 'package:stocktwits_app/watchlist.dart';
 
 void main() {
   runApp(MyApp());
@@ -90,6 +91,16 @@ class _HomePageState extends State<HomePage> {
                     Text('Created : ${watchlist[index]['created_at']}'),
                   ],
                 ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => WatchList(
+                                title: watchlist[index]['name'],
+                                watchListID: watchlist[index]['id'].toString(),
+                                token: token,
+                              )));
+                },
               );
             }),
       ),
